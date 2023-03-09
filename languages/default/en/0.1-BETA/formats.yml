@@ -1,1 +1,150 @@
-a
+Formats:
+  #This identifier can be anything you want. You can only use letters and lowercase. MUST BE UNIQUE!
+  owner:
+    Permission: "alonsochat.format.owner"
+    #This are the parts of the format. You can make only one part with plain text.
+    #However, if you want hover text, click actions and more, you need to create them here. One part per action.
+    Parts:
+      rank:
+        #Text of the part, this is required in all parts.
+        #PlaceholderAPI is available in all fields for text, value and hover.
+        #Native placeholders are also available:
+        # {PLAYER} - Player name.
+        Text: "&4%vault_prefix%"
+        #Section required if you want hover text.
+        Hover:
+        - "&eThis is the owner of the network!"
+        #Click types available are:
+        # OPEN_URL - Opens url
+        # RUN_COMMAND - Run command as player (Must start with slash)
+        # SUGGEST_COMMAND - Suggest command in player chat box (Must start with slash)
+        # CHAT - Send message as player
+        # SUGGEST_CHAT - Suggest text in player chat box
+        # COPY_TO_CLIPBOARD - Copy to clipboard (Available in newer versions ONLY)
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/AlonsoChat"
+      player:
+        Text: "&4{PLAYER}"
+        Hover:
+        - "%vault_prefix% {PLAYER}"
+        - "&7Level: &8%alonsolevels_colored_level_format%"
+        - "&7Experience: &e%alonsolevels_experience%"
+        - "&7League: &e%alonsoleagues_league_display%"
+        - "&7League points: &a%alonsoleagues_points%"
+        - "&7Money: &a%vault_eco_balance% ⛃"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/discord"
+      suffix:
+        Text: "%vault_suffix%"
+        Hover:
+        - "&cClick to purchase cool tags!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/plugins"
+      twopoints:
+        Text: "&7: "
+      #Placeholder {MESSAGE} will be replaced with the message being sent.
+      #PlaceholderAPI will NOT be replaced in message content, only in format parts.
+      message:
+        Text: "&6{MESSAGE}"
+  staff:
+    Permission: "alonsochat.format.staff"
+    Parts:
+      rank:
+        Text: "&c%vault_prefix%"
+        Hover:
+        - "&eThis is a staff member!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/AlonsoChat"
+      player:
+        Text: "&c{PLAYER}"
+        Hover:
+        - "%vault_prefix% {PLAYER}"
+        - "&7Level: &8%alonsolevels_colored_level_format%"
+        - "&7Experience: &e%alonsolevels_experience%"
+        - "&7League: &e%alonsoleagues_league_display%"
+        - "&7League points: &a%alonsoleagues_points%"
+        - "&7Money: &a%vault_eco_balance% ⛃"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/discord"
+      suffix:
+        Text: "%vault_suffix%"
+        Hover:
+        - "&cClick to purchase cool tags!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/plugins"
+      twopoints:
+        Text: "&7: "
+      message:
+        Text: "&b{MESSAGE}"
+  donor:
+    Permission: "alonsochat.format.donor"
+    Parts:
+      rank:
+        Text: "&b%vault_prefix%"
+        Hover:
+        - "&ePurchase this rank in our store!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/AlonsoChat"
+      player:
+        Text: "&b{PLAYER}"
+        Hover:
+        - "%vault_prefix% {PLAYER}"
+        - "&7Level: &8%alonsolevels_colored_level_format%"
+        - "&7Experience: &e%alonsolevels_experience%"
+        - "&7League: &e%alonsoleagues_league_display%"
+        - "&7League points: &a%alonsoleagues_points%"
+        - "&7Money: &a%vault_eco_balance% ⛃"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/discord"
+      suffix:
+        Text: "%vault_suffix%"
+        Hover:
+        - "&cClick to purchase cool tags!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/plugins"
+      twopoints:
+        Text: "&7: "
+      message:
+        Text: "&f{MESSAGE}"
+  #The one called default will not require permission. This is for all players without permissions for other formats.
+  default:
+    Parts:
+      rank:
+        Text: "&8%vault_prefix%"
+        Hover:
+        - "&ePurchase a rank in our store!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/AlonsoChat"
+      player:
+        Text: "&8{PLAYER}"
+        Hover:
+        - "%vault_prefix% {PLAYER}"
+        - "&7Level: &8%alonsolevels_colored_level_format%"
+        - "&7Experience: &e%alonsolevels_experience%"
+        - "&7League: &e%alonsoleagues_league_display%"
+        - "&7League points: &a%alonsoleagues_points%"
+        - "&7Money: &a%vault_eco_balance% ⛃"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/discord"
+      suffix:
+        Text: "%vault_suffix%"
+        Hover:
+        - "&cClick to purchase cool tags!"
+        Click:
+          Type: "OPEN_URL"
+          Value: "https://alonsoaliaga.com/plugins"
+      twopoints:
+        Text: "&7: "
+      message:
+        Text: "&7{MESSAGE}"
