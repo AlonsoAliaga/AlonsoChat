@@ -4,14 +4,6 @@
 #               /_/ \_\_\___/_||_/__/\___/\___|_||_\__,_|\__|                  Test server: plugins.alonsoaliaga.com
 #                          by AlonsoAliaga                                     Twitch: https://alonsoaliaga.com/twitch
 #           Considering donating? https://alonsoaliaga.com/donate              Thanks for using my plugin <3
-# ======================================================================================================================================
-# |              Downloaded this jar in a server setup? Tell the author he is NOT allowed to upload someone else work!                 |
-# |   Update to latest version as soon as possible. Support WON'T be given when using old versions. Specially from downloaded setups.  |
-# | Remember: Support is only provided for .jar files downloaded DIRECTLY from spigotmc.org! Other files will be considered as invalid |
-# |        as they are NOT the same .jar file the developer (me) uploaded and I cannot guarantee that the file is safe or not.         |
-# |                   If you have issues with setup configs. Tell the setup author to update his config file.                          |
-# |                          Download original plugin directly from https://alonsoaliaga.com/AlonsoChat                                |
-# ======================================================================================================================================
 Messages:
   No-permission: "&cYou don't have permission to do this."
   Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
